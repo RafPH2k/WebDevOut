@@ -1,0 +1,62 @@
+
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%
+    }
+    50%,100%
+    {
+        left: 100%
+    }
+}
+a span:nth-child(3)
+{
+    bottom: 0;
+    right: 100%
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,antiquewhite);
+    animation: animate3 1s linear infinite;
+    
+    
+}
+
+@keyframes animate3
+{
+    0%
+    {
+       right: -100%
+    }
+    50%,100%
+    {
+        right: 100%
+    }
+}
+span
+{
+    position: absolute;
+    background: url(heart.png);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+
+}

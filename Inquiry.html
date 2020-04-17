@@ -1,0 +1,155 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inquiry</title>
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Style1.css">
+    <link rel="stylesheet" href="css/Style2.css">
+    <style type="text/css">
+        #page-wrap {
+	width: 700px;
+	background: white;
+	padding: 70px 50px 20px 20px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+        .header{
+            font-size: 20px;}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.7em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+    resize: none;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+.submit-button {
+	border-radius: 4px;
+	background-color: white;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+  }
+  
+  .submit-button:hover {
+	background-color: grey;
+	color: white;
+  }
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.7em;
+}
+        
+    
+	
+     </style>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Panda School</h2>
+        <ul>
+            <li><a href="SideMain.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="Courses.html"><i class="fas fa-user"></i>Courses</a></li>
+            <li><a href="Registration.html"><i class="fas fa-address-card"></i>Registration</a></li>
+            <li><a href="Anouncement.html"><i class="fas fa-project-diagram"></i>Anouncement</a></li>
+            <li><a href="Inquiry.html"><i class="fas fa-blog"></i>Inqury</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Gallery</a></li>
+            <li><a href="Exam.html"><i class="fas fa-map-pin"></i>Online Examination</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><center>Welcome To Panda School Inquiry!</center></div>  
+        <div class="info">
+        <div id="page-wrap">
+
+		<h1 style="text-align: center; font-size: 40px">Contact Us</h1>
+				
+		<div id="contact-area">
+			
+			<form method="post" action="#">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" placeholder="Name" />
+
+				<label for="City">City:</label>
+				<input type="text" name="City" id="City" placeholder="City" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" placeholder="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Send" class="submit-button" />
+			</form>
+        
+    
+</div>
+    
+    
+              
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+         var body = document.querySelector('body');
+         var heart = document.createElement("span");
+         var x = e.offsetX;
+         var y = e.offsetY;
+         heart.style.left = x+'px';
+         heart.style.top = y+'px';
+         var size = Math.random() * 100;
+         heart.style.width = 10+size+'px';
+         heart.style.height = 10+size+'px';
+         body.appendChild(heart);
+        
+         setTimeout(function(){
+          heart.remove();            
+         },2000);
+         })
+    </script>
+
+</body>
+</html>

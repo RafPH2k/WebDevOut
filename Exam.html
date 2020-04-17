@@ -1,0 +1,100 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exam</title>
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Style1.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <script src = "js/main.js"></script>
+    <style type ="text/css">
+        .header{
+            font-size: 20px;}
+    </style>
+    
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Panda School</h2>
+        <ul>
+            <li><a href="SideMain.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="Courses.html"><i class="fas fa-user"></i>Courses</a></li>
+            <li><a href="Registration.html"><i class="fas fa-address-card"></i>Registration</a></li>
+            <li><a href="Anouncement.html"><i class="fas fa-project-diagram"></i>Anouncement</a></li>
+            <li><a href="Inquiry.html"><i class="fas fa-blog"></i>Inqury</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Gallery</a></li>
+            <li><a href="Exam.html"><i class="fas fa-map-pin"></i>Online Examination</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><center>Welcome To Panda EXAM!</center></div>  
+        <div class="info">
+      <form id = "quiz" name = "quiz">
+
+
+<p class = "questions">Where do pandas come from?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">What sort of animal are pandas?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Rodent"> Rodent<br>
+<input type = "radio" id = "mc" name = "question2" value = "Bear"> Bear<br>
+<input type = "radio" id = "mc" name = "question2" value = "Big Cat"> Big Cat<br>
+
+<p class = "questions">What's a baby panda called?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Cub"> Cub<br>
+<input type = "radio" id = "mc" name = "question3" value = "Kitten"> Kitten<br>
+<input type = "radio" id = "mc" name = "question3" value = "Pup"> Pup<br>
+    
+<p class = "questions">What do pandas eat?</p>
+<input type = "radio" id = "mc" name = "question4" value = "Eucalyptus"> Eucalyptus<br>
+<input type = "radio" id = "mc" name = "question4" value = "Mint Leaves">Mint Leaves<br>
+<input type = "radio" id = "mc" name = "question4" value = "Bamboo">Bamboo<br>
+
+<p class = "questions">Why are pandas going extinct?</p>
+<input type = "radio" id = "mc" name = "question5" value = "Because they are losing habitat"> Because they are losing habitat<br>
+<input type = "radio" id = "mc" name = "question5" value = "Because they don't have enough food"> Because they don't have enough food<br>
+<input type = "radio" id = "mc" name = "question5" value = "Because they don't reproduce very fast"> Because they don't reproduce very fast<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+         var body = document.querySelector('body');
+         var heart = document.createElement("span");
+         var x = e.offsetX;
+         var y = e.offsetY;
+         heart.style.left = x+'px';
+         heart.style.top = y+'px';
+         var size = Math.random() * 100;
+         heart.style.width = 10+size+'px';
+         heart.style.height = 10+size+'px';
+         body.appendChild(heart);
+        
+         setTimeout(function(){
+          heart.remove();            
+         },2000);
+         })
+    </script>
+
+</body>
+</html>

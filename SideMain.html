@@ -1,0 +1,66 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Style1.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style type="text/css">
+        .header{
+            font-size: 20px;}
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Panda School</h2>
+        <ul>
+            <li><a href="SideMain.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="Courses.html"><i class="fas fa-user"></i>Courses</a></li>
+            <li><a href="Registration.html"><i class="fas fa-address-card"></i>Registration</a></li>
+            <li><a href="Anouncement.html"><i class="fas fa-project-diagram"></i>Anouncement</a></li>
+            <li><a href="Inquiry.html"><i class="fas fa-blog"></i>Inqury</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Gallery</a></li>
+            <li><a href="Exam.html"><i class="fas fa-map-pin"></i>Online Examination</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><center>Welcome To Panda School!</center></div>  
+        <div class="info">
+      </div>
+    </div>
+</div>
+    <center>
+              <div class="Video"></div>
+        <video width="1000" height="600" controls autoplay>
+            <source src="Vids.mp4">
+        </video>
+              </center>
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+         var body = document.querySelector('body');
+         var heart = document.createElement("span");
+         var x = e.offsetX;
+         var y = e.offsetY;
+         heart.style.left = x+'px';
+         heart.style.top = y+'px';
+         var size = Math.random() * 100;
+         heart.style.width = 10+size+'px';
+         heart.style.height = 10+size+'px';
+         body.appendChild(heart);
+        
+         setTimeout(function(){
+          heart.remove();            
+         },2000);
+         })
+    </script>
+
+</body>
+</html>

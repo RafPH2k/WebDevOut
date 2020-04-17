@@ -1,0 +1,222 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        } 
+        .header{
+            font-size: 20px;
+        }
+        .regform{
+            width: 800px;
+            background-color: rgb(0,0,0,6);
+            margin:auto;
+            color:#FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px
+        }
+        
+            
+        
+        form{
+            padding: 10px;
+            border-style: solid;
+            border-width: 3px;
+            border-left-width: 10px;
+            border-right-width: 10px;
+            
+        }
+        #name{
+            width: 100%;
+            
+        }
+        .firstname{
+            position: relative;
+            font-size: 30px;
+        }
+        .lastname{
+            position: relative;
+            font-size: 30px;
+        }
+         .SchoolYear{
+            position: relative;
+             font-size: 30px;
+        }
+         .option{
+            position: relative;
+             font-size: 20px;
+        }
+         .email{
+            position: relative;
+             font-size: 30px;
+        }
+        .code{
+            position: relative;
+             font-size: 30px;
+        }
+        .number{
+            position: relative;
+             font-size: 30px;
+        }
+        .submit-button {
+	border-radius: 4px;
+	background-color: white;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+  }
+  
+  .submit-button:hover {
+	background-color: grey;
+	color: white;
+  }
+        
+        
+        
+        
+    </style>
+        
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Style1.css">
+    <link rel="stylesheet" href="css/Style2.css">
+    
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+ 
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Panda School</h2>
+        <ul>
+            <li><a href="SideMain.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="Courses.html"><i class="fas fa-user"></i>Courses</a></li>
+            <li><a href="Registration.html"><i class="fas fa-address-card"></i>Registration</a></li>
+            <li><a href="Anouncement.html"><i class="fas fa-project-diagram"></i>Anouncement</a></li>
+            <li><a href="Inquiry.html"><i class="fas fa-blog"></i>Inqury</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Gallery</a></li>
+            <li><a href="Exam.html"><i class="fas fa-map-pin"></i>Online Examination</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><center>Welcome To Panda School Registration!</center></div>  
+         <div class="regform"><h1>School Registration</h1></div>
+        <div class="info">
+    <form>
+    <div id = "name">
+        <h2 class="name"> Name </h2>
+        <label class="firstlabel">FirstName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input class ="firstname" type="text" name="first_name" Placeholder="Given Name">
+        <label class="lastnamlabel">LastName</label>
+        <input class ="lastname" type="text" name="last_name" Placeholder="Surname">
+        <br>
+        <br>
+        <h2 class="name"> School Year </h2>
+        <label class="SchoolYearlabel">School Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input class ="SchoolYear" type="text" name="School_Year" Placeholder="YYYY-YYYY">
+        <br>
+        
+         <br>
+        <h2 class="name"> Course </h2>
+        <select class ="option"  name="Course"><br>
+        <option disabled="disabled" selected="selected">--Choose Course</option>
+            <option>Accounting</option>
+            <option>Business law</option>
+            <option>Entrepreneurial skills</option>
+            <option>Personal finance</option>
+            <option>Animation</option>
+            <option>App development</option>
+            <option>Computer programming</option>
+            <option>Web design</option>
+            <option>American literature</option>
+            <option>Humanities</option>
+            <option>Technical writing</option>
+            <option>World literature</option>
+            <option>Algebra 1</option>
+            <option>Multivariable calculus</option>
+            <option>Pre-algebra</option>
+            <option>Fundamentals of math</option>
+            <option>Weight training</option>
+            <option>Gymnastics</option>
+            <option>Health</option>
+            <option>Yoga</option>
+        </select>
+         <br>
+         <br>
+        <h2 class="name"> Email </h2>
+        <label class="emaillabel">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input class ="email" type="text" name="email" Placeholder="01234@gmail.com">
+         <br>
+         <br>
+        <h2 class="name"> Phone </h2>
+        <label class="area-code">Area Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class ="code" type="text" name="area_code"Placeholder="+##"><br>
+        <br>
+        <label class="phone-number">Phone Number</label>
+        <input class="number" type="text" name="phone"Placeholder="###########"><br>
+        
+        <br>
+        <h2 id="student">Student Curriculum </h2>
+        <label class="radio">
+        <input class="radio-one" type="radio"  name="">
+        <span class = "checkmark"></span>
+            Old
+        <label class="radio">
+        <input class="radio-two" type="radio"  name="">
+        <span class = "checkmark"></span>
+            New
+        
+            <br>
+    
+    <input type="submit" name="submit" value="Register" class="submit-button" />
+         
+                
+            </label>
+        </label>
+            </div>
+    </form>
+        
+    
+</div>
+    
+    
+              
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+         var body = document.querySelector('body');
+         var heart = document.createElement("span");
+         var x = e.offsetX;
+         var y = e.offsetY;
+         heart.style.left = x+'px';
+         heart.style.top = y+'px';
+         var size = Math.random() * 100;
+         heart.style.width = 10+size+'px';
+         heart.style.height = 10+size+'px';
+         body.appendChild(heart);
+        
+         setTimeout(function(){
+          heart.remove();            
+         },2000);
+         })
+    </script>
+
+</body>
+</html>
